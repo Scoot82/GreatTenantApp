@@ -4,11 +4,18 @@
           <%= link_to "GreatTenants", root_path, id: "logo" %>
           <nav>
             <ul class="nav pull-right">
-              <li><%= link_to "Home",    '#' %></li>
+							<% if tenant_signed_in? %>
+						      <li><%= link_to current_tenant.email, edit_tenant_registration_path %></li>
+						      <li><%= link_to "Logout", destroy_tenant_session_path, method: :delete %></li>
+						    <% else %>
+						      <li><%= link_to "Sign up", new_tenant_registration_path %></li>
+						      <li><%= link_to "Login", new_tenant_session_path %></li>
+						    <% end %>
+              <li><%= link_to "Home", root_path %></li>
               <li><%= link_to "Help",    '#' %></li>
-              <li><%= link_to "Sign in", '#' %></li>
             </ul>
           </nav>
         </div>
       </div>
 </header>
+
