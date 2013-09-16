@@ -1,22 +1,24 @@
-<div class="center">
-	<div class="row-fluid">
-		<h1 class="pull-center">
-			<strong>SOMETHING HERE</strong>
-		</h1>	
-	</div>	
-
-	<div class="row-fluid">
-		<div class="span6 offsetHalf block ">
-			<div class="pull-center">
-				<h2>Landlords</h2>
-				<div><%= image_tag "keys.png", size: "224x224" %></div>
-			</div>
-			<%= link_to "Find Tenants", '#', class: "btn btn-large btn-primary" %>
-		</div>
-		<div class="span6 block">
-			<h2>Tenants</h2>
-			<div><%= image_tag "House.png", size: "224x224" %></div>
-			<%= link_to "Get Housing Offers", '#', class: "btn btn-large btn-primary" %>
+<body class="homepage">
+	<div class="center">
+		<div class="row-fluid">
+			<h1 class="pull-center">
+				<strong>Finding an apartment doesn't have to suck.</strong>
+			</h1>	
 		</div>	
-	</div>	
-</div>
+
+		<div class="row-fluid">
+			<div class="span6 offsetHalf block hero-unit">
+				<div class="pull-center">
+					<h1>Landlords</h1>
+					<div><%= image_tag "keys.png", size: "150x150" %></div>
+				</div>
+				<%= link_to "Find Amazing Tenants", '#', class: "btn btn-large btn-primary" %>
+			</div>
+			<div class="span6 block hero-unit">
+				<h1>Tenants</h1>
+				<div><%= image_tag "House.png", size: "150x150" %></div>
+				<%= link_to "Get Housing Offers", '#', class: "btn btn-large btn-primary" %>
+			</div>	
+		</div>	
+	</div>
+</body>
