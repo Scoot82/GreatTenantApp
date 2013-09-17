@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130917152828) do
+ActiveRecord::Schema.define(version: 20130917153913) do
+
+  create_table "landlords", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "image"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "landlords", ["email"], name: "index_landlords_on_email", unique: true
 
   create_table "tenants", force: true do |t|
     t.string   "name"
