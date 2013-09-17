@@ -18,7 +18,7 @@ html {
 
 body.homepage {
   padding-top: 60px;
-  background-image: image-url('skyline.jpg');
+  background-image: asset-data-url('skyline.jpg');
   background-size:cover;
   background-repeat:no-repeat;
 }
