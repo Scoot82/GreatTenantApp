@@ -1,0 +1,4 @@
+<% @tenants.each do |f| %>
+	<div><%= f.name %>
+				<%= image_tag f.image_url(:thumb).to_s %></div>
+<%end %>
